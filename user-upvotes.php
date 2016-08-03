@@ -70,7 +70,7 @@
 //	Sub menu for navigation in user pages
 
 	$ismyuser = isset($loginuserid) && $loginuserid == (QA_FINAL_EXTERNAL_USERS ? $userid : $useraccount['userid']);
-	$qa_content['navigation']['sub'] = qa_user_sub_navigation($handle, 'activity', $ismyuser);
+	$qa_content['navigation']['sub'] = qa_user_sub_navigation($handle, 'upvotes', $ismyuser);
 
 
 	return $qa_content;

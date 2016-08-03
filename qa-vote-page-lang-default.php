@@ -8,6 +8,7 @@
 		// default
 		'upvotes_by_x' => 'Upvotes by ^',
 		'no_upvotes_by_x' => 'No upvotes by ^',
+		'upvotes_posts' => 'Upvotes Posts',
 	);
 
 
