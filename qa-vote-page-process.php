@@ -9,7 +9,9 @@ class qa_vote_page_process
 {
 	public function init_page()
 	{
-		if (qa_request_part(0) !== 'user' || empty(qa_request_part(2)) || qa_request_part(2) !== 'upvotes') {
+		$page = qa_request_part(0);
+		$action = qa_request_part(2);
+		if ($page !== 'user' || empty($action) || $action !== 'upvotes') {
 			return;
 		}
 
