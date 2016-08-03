@@ -56,7 +56,7 @@ class qa_vote_page_process
 		}
 
 		qa_set_template('user-upvotes');
-		$qa_content = include VOTE_PAGE_DIR.'user-upvotes.php';
+		$qa_content = include VOTE_PAGE_DIR.'/user-upvotes.php';
 
 		if (is_array($qa_content)) {
 			if (QA_DEBUG_PERFORMANCE)
