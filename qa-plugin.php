@@ -18,8 +18,12 @@ if (!defined('QA_VERSION')) { // don't allow this page to be requested directly 
 	exit;
 }
 
+//Define global constants
+@define( 'VOTE_PAGE_DIR', dirname( __FILE__ ) );
+@define( 'VOTE_PAGE_FOLDER', basename( dirname( __FILE__ ) ) );
+
 // process
-// qa_register_plugin_module('process', 'qa-vote-page-process.php', 'qa_vote_page_process', 'Vote Page Process');
+qa_register_plugin_module('process', 'qa-vote-page-process.php', 'qa_vote_page_process', 'Vote Page Process');
 // layer
 // qa_register_plugin_layer('qa-vote-page-layer.php','Vote Page Layer');
 
