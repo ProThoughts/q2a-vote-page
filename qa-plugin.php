@@ -27,7 +27,7 @@ qa_register_plugin_phrases('qa-vote-page-lang-*.php', 'qa_vote_page');
 // process
 qa_register_plugin_module('process', 'qa-vote-page-process.php', 'qa_vote_page_process', 'Vote Page Process');
 // layer
-// qa_register_plugin_layer('qa-vote-page-layer.php','Vote Page Layer');
+qa_register_plugin_layer('qa-vote-page-layer.php','Vote Page Layer');
 
 /*
 	Omit PHP closing tag to help avoid accidental output
