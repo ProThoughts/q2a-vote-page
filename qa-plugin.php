@@ -22,6 +22,8 @@ if (!defined('QA_VERSION')) { // don't allow this page to be requested directly 
 @define( 'VOTE_PAGE_DIR', dirname( __FILE__ ) );
 @define( 'VOTE_PAGE_FOLDER', basename( dirname( __FILE__ ) ) );
 
+// language file
+qa_register_plugin_phrases('qa-vote-page-lang-*.php', 'qa_vote_page');
 // process
 qa_register_plugin_module('process', 'qa-vote-page-process.php', 'qa_vote_page_process', 'Vote Page Process');
 // layer

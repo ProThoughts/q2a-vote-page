@@ -39,9 +39,9 @@
 	$qa_content = qa_content_prepare(true);
 
 	if (count($questions))
-		$qa_content['title'] = qa_lang_html_sub('profile/recent_activity_by_x', $userhtml);
+		$qa_content['title'] = qa_lang_html_sub('qa_vote_page/upvotes_by_x', $userhtml);
 	else
-		$qa_content['title'] = qa_lang_html_sub('profile/no_posts_by_x', $userhtml);
+		$qa_content['title'] = qa_lang_html_sub('qa_vote_page/no_upvotes_by_x', $userhtml);
 
 
 //	Recent activity by this user
