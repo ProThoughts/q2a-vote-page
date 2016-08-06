@@ -39,7 +39,7 @@ class qa_html_theme_layer extends qa_html_theme_base
 		if (isset($sub_nav['user_blogs'])) {
 			qa_array_insert($sub_nav, 'user_blogs', $nav);
 		} else {
-			$sub_nav[] = $nav;
+			$sub_nav['upvotes'] = $nav['upvotes'];
 		}
 
 	}
